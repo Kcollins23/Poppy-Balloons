@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poppy Balloons</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff6f8;
+      color: #444;
+    }
+    header {
+      background-color: #ffd9e6;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #f97ba5;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aa7bcc;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #f7d0ff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #aa7bcc;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .gallery, .contact {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      padding: 30px;
+    }
+    h2 {
+      color: #aa7bcc;
+    }
+    footer {
+      background-color: #ffd9e6;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    input, textarea, select, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #f97ba5;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background-color: #e56a95;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Poppy Balloons</h1>
+    <p>Making Every Moment Pop with Poppy Balloons!</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="services" id="services">
+    <h2>Balloon Services</h2>
+    <ul>
+      <li>🎈 Balloon Garlands - Starting at $125</li>
+      <li>🎉 Balloon Arches - Starting at $200</li>
+      <li>📦 Grab & Go Garlands - Starting at $75</li>
+      <li>🎨 Custom Themes - Ask for a quote</li>
+      <li>✨ Add-ons: Foils, fringe, number balloons, and more</li>
+    </ul>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Our Balloon Magic</h2>
+    <p>From baby showers to birthdays, here are some of our favorite custom designs. (Gallery images go here.)</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact & Booking</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" />
+
+      <label for="event">Event Type</label>
+      <select id="event" name="event">
+        <option>Birthday</option>
+        <option>Baby Shower</option>
+        <option>Graduation</option>
+        <option>Business Event</option>
+        <option>Other</option>
+      </select>
+
+      <label for="date">Event Date</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="details">Tell us about your colors or theme</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <button type="submit">✨ Request Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Poppy Balloons – Cheyenne, Wyoming
+  </footer>
+</body>
+</html>
